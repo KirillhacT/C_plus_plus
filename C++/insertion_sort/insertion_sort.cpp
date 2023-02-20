@@ -19,7 +19,7 @@ void insertion_sort(vector <int> &A)
     {
         int i = pos;
         while (i > 0 && A[i-1] > A[i]) {
-            swap(A[i], A[i - 1])
+            swap(A[i], A[i - 1]);
             i -= 1;
         }
     }
