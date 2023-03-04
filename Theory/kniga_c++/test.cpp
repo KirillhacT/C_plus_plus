@@ -31,6 +31,8 @@ void Swap(int& x, int& y) {
     x = y;
     y = temp;
 }
+
+
 void print_vector(const vector<int>& vec) {
     for (vector<int>::const_iterator iter = vec.begin();
         iter < vec.end(); iter++)
@@ -38,9 +40,11 @@ void print_vector(const vector<int>& vec) {
         cout << *iter << endl;
     }
 }
-string& refTo(vector<string>& vec, int i) {
+int& refTo(vector<int>& vec, int i) {
     return vec[i];
 }
+
+
 int main()
 {
     //Константы и for
@@ -77,7 +81,7 @@ int main()
     // }
 
 
-    //vector
+    //vector и итераторы
     // vector<string> inventory;
     // inventory.push_back("sword");
     // inventory.push_back("shield");
@@ -133,20 +137,25 @@ int main()
     // triangle(l2);
     // cout << example(25) << endl;
 
-    //Указатели
-    int myScore = 1000;
-    int& rMikesScore = myScore; //создаем ссылку
-    cout << rMikesScore << endl;
-    myScore += 100;
-    cout << rMikesScore << endl;
-    int x, y;
-    x = 10;
-    y = 20;
-    cout << x << " " << y << endl;
-    Swap(x, y);
-    cout << x << " " << y << "\n\n";
+    //Ссылки
+    // int myScore = 1000;
+    // int& rMikesScore = myScore; //создаем ссылку
+    // cout << rMikesScore << endl;
+    // myScore += 100;
+    // cout << rMikesScore << endl;
 
-    vector<int> Params = {1, 2, 3};
-    print_vector(Params);
+    // int x, y;
+    // x = 10;
+    // y = 20;
+    // cout << x << " " << y << endl;
+    // Swap(x, y);
+    // cout << x << " " << y << "\n\n";
+
+    // vector<int> Params = {1, 2, 3};
+    // // print_vector(Params);
+    // int& ssg = refTo(Params, 0);
+    // cout << ssg << endl;
+    // Params[0] = 23;
+    //  cout << ssg << endl;
 }
 
